@@ -77,8 +77,8 @@
     /* HERO */
     .hero {
       padding: 3.5rem 0 3rem;
-      display: grid; grid-template-columns: 1fr 280px;
-      gap: 2rem; align-items: flex-end; min-height: 380px;
+      display: grid; grid-template-columns: 1fr 360px;
+      gap: 2rem; align-items: flex-start; min-height: 500px;
     }
     .hero-tag {
       font-family: var(--mono); font-size: 10px;
@@ -117,18 +117,13 @@
     .dark .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
 
     /* PHOTO */
-    .hero-photo-wrap {
-      position: relative; align-self: flex-end;
-      height: 340px; display: flex; align-items: flex-end; justify-content: center;
+   .hero-photo-wrap {
+      position: sticky; top: 70px;
+      height: 520px; display: flex; align-items: flex-end; justify-content: center;
     }
     .hero-photo {
       height: 100%; width: 100%; object-fit: cover;
-      object-position: center top;
-      border-radius: 18px 18px 0 0;
-      filter: contrast(1.05) brightness(1.02);
-      -webkit-mask-image: linear-gradient(to top, transparent 0%, black 22%, black 100%);
-      mask-image: linear-gradient(to top, transparent 0%, black 22%, black 100%);
-      transition: filter 0.4s;
+      object-position: center 20%;
     }
     .dark .hero-photo {
       filter: contrast(1.1) brightness(0.92) saturate(0.85);
